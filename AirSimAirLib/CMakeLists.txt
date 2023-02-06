@@ -36,8 +36,8 @@ target_include_directories(
         ${RPCLIB_INCLUDE_DIR}
 )
 
-# target_link_libraries(${PROJECT_NAME} PUBLIC rpclib::rpc)
-target_link_libraries(${PROJECT_NAME} PUBLIC ${RPCLIB_LIBS})
+target_link_libraries(${PROJECT_NAME} PUBLIC rpc)
+# target_link_libraries(${PROJECT_NAME} PUBLIC ${RPCLIB_LIBS})
 target_link_libraries(${PROJECT_NAME} PUBLIC Eigen3::Eigen)
 
 # actually AirSimAirLib dependency should add -pthreads. 
